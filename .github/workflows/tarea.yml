@@ -15,4 +15,5 @@ jobs:
         run: python --version
 
       - name: Ejecutar script simple
-        run: python -c "print('Hola desde Python, este contenedor se creo con github actions')"
+        run: python -c "print('Hola desde Python, este contenedor se creo con github actions :)')"
+
