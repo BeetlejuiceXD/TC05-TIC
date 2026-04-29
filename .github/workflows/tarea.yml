@@ -1,0 +1,18 @@
+name: Tarea Contenedor Python
+
+on: push
+
+jobs:
+  build-python:
+    runs-on: ubuntu-latest
+    container: python:3.10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Mostrar versión de Python
+        run: python --version
+
+      - name: Ejecutar script simple
+        run: python -c "print('Hola desde Python, este contenedor se creo con github actions')"
